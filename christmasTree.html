@@ -32,7 +32,7 @@ body {
 	margin: 2rem;
 	padding: 1px;
 	height: 100vh;
-	background-color: #d6c629;
+	background-color: #ffffff;
 	background-attachment: local;
 }
 .message {
@@ -45,7 +45,7 @@ body {
 	line-height: 1.45rem;
 	padding-bottom: 1.25rem;
 	margin-bottom: 1.15rem;
-	margin-top: 4.0rem;
+	margin-top: 3.0rem;
 	position: relative;
 	overflow-wrap: break-word;
 	color: #dd2616;
@@ -153,9 +153,27 @@ body {
 	transform: rotateY(0deg);
 }
 
+@media screen and (min-width:1279px) {
+.card {
+	width: 70vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:1025px) {
+.card {
+	width: 80vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+    
 @media screen and (max-width:995px) {
 .card {
-	width: 60vw;
+	width: 70vw;
 }
 .front, .back {
 	height: 100%;
@@ -170,7 +188,7 @@ body {
 	height: 100%;
 }
 }
-
+    
 @media screen and (max-width:850px) {
 .card {
 	width: 80vw;
@@ -179,7 +197,7 @@ body {
 	height: 100%;
 }
 }
-    
+
 @media screen and (max-width:800px) {
 .card {
 	width: 100vw;
@@ -191,10 +209,27 @@ body {
 
 @media screen and (max-width: 414px) {
 .card {
-	height: 50vw;
+	height: 45vw;
+    width: 99vw;
 }
 .front, .back {
 	height: 100%;
+}
+.message {
+	margin-left: .8rem;
+    margin-right: .3rem;
+	font-weight: 20;
+	font-size: .55rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: 1.2rem;
+	margin-bottom: .5rem;
+	margin-top: 2.5rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
 }
 }
 </style>
