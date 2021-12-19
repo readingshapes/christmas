@@ -32,7 +32,7 @@ body {
 	margin: 2rem;
 	padding: 1px;
 	height: 100vh;
-	background-color: #fbf9e5;
+	background-color: #e3d096;
 	background-attachment: local;
 }
 .message {
@@ -91,8 +91,8 @@ body {
 .card {
 	color: inherit;
 	cursor: pointer;
-	width: calc(60% - 6rem);
-	height: 74vh;
+	width: calc(75% - 6rem);
+	height: 100vh;
 	perspective: 950px;
 	margin: 2rem;
 	position: relative;
@@ -165,6 +165,15 @@ body {
 @media screen and (max-width:900px) {
 .card {
 	width: 70vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:850px) {
+.card {
+	width: 80vw;
 }
 .front, .back {
 	height: 100%;
