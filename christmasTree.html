@@ -1,0 +1,229 @@
+<!doctype html>
+<!--Christmas Tree-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" charset="utf-8">
+<!--responsive card flips-->
+<title>🎄🎁🎅🕎🕯️❄️☃️🌲🌿🍂🌨️</title>
+<!--    // Scss Document-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap');
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+}
+html {
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 300;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+}
+h2 {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+}
+body {
+	margin: 2rem;
+	padding: 1px;
+	height: 100vh;
+	background-color: #fbf9e5;
+	background-attachment: local;
+}
+.message {
+	margin-left: 3rem;
+    margin-right: 3rem;
+	font-weight: 100;
+	font-size: 1.118rem;
+	text-align: left;
+	letter-spacing: 0.1ch;
+	line-height: 1.45rem;
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.15rem;
+	margin-top: 4.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+.content {
+	display: flex;
+	flex: 0 0 auto;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 300;
+}
+.heading {
+	width: 100%;
+	margin-left: 1rem;
+	font-weight: 800;
+	font-size: 1.918rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1ch;
+	line-height: 1.85rem;
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.15rem;
+	margin-top: 1.5rem;
+	position: relative;
+	font-family: 'Arima Madurai', cursive;
+}
+.description {
+	width: 100%;
+	margin-top: 0;
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+.card {
+	color: inherit;
+	cursor: pointer;
+	width: calc(60% - 6rem);
+	height: 74vh;
+	perspective: 950px;
+	margin: 2rem;
+	position: relative;
+}
+.front, .back {
+	display: flex;
+	flex: 0 0 auto;
+	border-radius: 3px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: ffffff;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	min-width: 100%;
+	padding: 1.0rem;
+	margin: 0 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition: ease-in-out 800ms;
+}
+.front {
+	background-size: cover;
+	padding: 1rem;
+	color: #fff;
+	overflow: visible;
+}
+.front:before {
+	position: absolute;
+	display: flex;
+	flex: 0 0 auto;
+	background: none;
+	z-index: -1;
+}
+.card:hover .front {
+	transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+	transform: rotateY(-180deg);
+}
+.back {
+	background-size: cover;
+	padding: 1rem;
+	color: #fff;
+	overflow: visible;
+	transform: rotateY(-180deg);
+}
+.card:hover .back {
+	transform: rotateY(0deg);
+}
+.card:nth-child(even) .back {
+	transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .back {
+	transform: rotateY(0deg);
+}
+
+@media screen and (max-width:995px) {
+.card {
+	width: 60vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:900px) {
+.card {
+	width: 70vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:850px) {
+.card {
+	width: 80vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+    
+@media screen and (max-width:800px) {
+.card {
+	width: 100vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width: 414px) {
+.card {
+	height: 50vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="content"> <br>
+  <h1 class="heading">🎄🎁🎅🕎🕯️❄️☃️🌲🌿🍂🌨️</h1>
+  <br>
+</div>
+<!--start card here-->
+<div class="content"> <!--christmas tree--> 
+  <a class="card">
+  <div class="front" style="background-image: url(img/treebokeh.gif)"> </div>
+  <div onclick="location.href='https://raw.githubusercontent.com/readingshapes/birthdays/main/img/shannon_2021_2up.png';" class="back" style="background-image: url(img/christmastreeback.png)">
+    <div class="message">
+      <p>Dear Mom and Mike,<br><br>Thank you for all that you do, all year long. I hope you're cozy and warm, enjoying a fire and maybe a little sip of an adult beverage. Wish I could be there with you all. Maybe next year.<br><br>Love,<br>Kari</p>
+    </div>
+  </div>
+  </a> 
+    <!--who i'm sending this to-->
+    <!--mom & mike
+Dear Mom and Mike,
+
+Thank you for all that you do, all year long. I hope you're cozy and warm, enjoying a fire and maybe a little sip of an adult beverage. Wish I could be there with you all. Maybe next year.
+
+Love,
+Kari
+    shannon
+    nicole and diane-->
+    </div>
+</body>
+</html>
