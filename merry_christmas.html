@@ -43,7 +43,7 @@ body {
 	text-align: left;
 	letter-spacing: 0.1ch;
 	line-height: 1.45rem;
-	padding-bottom: 1.25rem;
+	padding-bottom: 1.6rem;
 	margin-bottom: 1.15rem;
 	margin-top: 2.0rem;
 	position: relative;
@@ -153,6 +153,24 @@ body {
 	transform: rotateY(0deg);
 }
 
+@media screen and (min-width:1279px) {
+.card {
+	width: 95vw;
+}
+.front, .back {
+	height: 90%;
+}
+}
+
+@media screen and (max-width:1025px) {
+.card {
+	width: 80vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+    
 @media screen and (max-width:995px) {
 .card {
 	width: 60vw;
@@ -170,7 +188,7 @@ body {
 	height: 100%;
 }
 }
-
+    
 @media screen and (max-width:850px) {
 .card {
 	width: 80vw;
@@ -195,6 +213,22 @@ body {
 }
 .front, .back {
 	height: 100%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 5.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
 }
 }
 </style>
