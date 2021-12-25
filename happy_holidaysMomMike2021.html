@@ -1,5 +1,5 @@
 <!doctype html>
-<!--Merry Christmas-->
+<!--Happy Holidays-->
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" charset="utf-8">
@@ -32,7 +32,7 @@ body {
 	margin: 2rem;
 	padding: 1px;
 	height: 100vh;
-	background-color: #e3d096;
+	background-color: #fbf9e5;
 	background-attachment: local;
 }
 .message {
@@ -43,9 +43,9 @@ body {
 	text-align: left;
 	letter-spacing: 0.1ch;
 	line-height: 1.45rem;
-	padding-bottom: 1.6rem;
+	padding-bottom: 1.25rem;
 	margin-bottom: 1.15rem;
-	margin-top: 2.0rem;
+	margin-top: 6.0rem;
 	position: relative;
 	overflow-wrap: break-word;
 	color: #dd2616;
@@ -91,8 +91,8 @@ body {
 .card {
 	color: inherit;
 	cursor: pointer;
-	width: 74vw;
-	height: 58vh;
+	width: calc(50% - 4rem);
+	height: 128vh;
 	perspective: 950px;
 	margin: 2rem;
 	position: relative;
@@ -109,9 +109,9 @@ body {
 	align-items: center;
 	position: absolute;
 	height: 100%;
-	width: 100%;
+	min-width: 100%;
 	padding: 1.0rem;
-	margin: 2 0;
+	margin: 0 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform-style: preserve-3d;
@@ -152,15 +152,15 @@ body {
 .card:nth-child(even):hover .back {
 	transform: rotateY(0deg);
 }
+    
 
 @media screen and (min-width:1360px) {
 .card {
 	width: 20vw;
-    height: 30vh;
 }
-.front, .back {
-	width: 180%;
-}
+/*.front, .back {
+	width: 100%;
+}*/
 }    
 @media screen and (min-width:1300px) {
 .card {
@@ -173,11 +173,10 @@ body {
     
 @media screen and (min-width:1200px) {
 .card {
-	width: 35vw;
-    height: 85vh;
+	width: 45vw;
 }
 .front, .back {
-	width: 160%;
+	width: 60%;
 }
 }
 @media screen and (min-width:1000px) {
@@ -185,11 +184,27 @@ body {
 	height: 30vw;
 }
 .front, .back {
-	height: 150%;
+	height: 100%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
 }
 }
       
-@media screen and (max-width:995px) {
+@media screen and (max-width:999px) {
 .card {
 	width: 35vw;
     height: 85vh;
@@ -276,7 +291,7 @@ body {
     
 @media screen and (max-width: 414px) {
 .card {
-	height: 50vw;
+	height: 40vw;
 }
 .front, .back {
 	height: 100%;
@@ -298,6 +313,77 @@ body {
 	font-family: 'Arima Madurai', cursive;
 }
 }
+
+/*
+@media screen and (min-width:1279px) {
+.card {
+	width: 70vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+    
+@media screen and (max-width:995px) {
+.card {
+	width: 60vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:900px) {
+.card {
+	width: 70vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+    
+@media screen and (max-width:850px) {
+.card {
+	width: 80vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width:800px) {
+.card {
+	width: 100vw;
+}
+.front, .back {
+	height: 100%;
+}
+}
+
+@media screen and (max-width: 414px) {
+.card {
+	height: 50vw;
+}
+.front, .back {
+	height: 100%;
+}
+.message {
+	margin-left: .8rem;
+    margin-right: .3rem;
+	font-weight: 10;
+	font-size: .55rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: 1.0rem;
+	margin-bottom: .5rem;
+	margin-top: 2.5rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}*/
 </style>
 </head>
 <body>
@@ -306,25 +392,15 @@ body {
   <br>
 </div>
 <!--start card here-->
-<div class="content"> <!--christmas tree--> 
+<div class="content"> <!--winter scene--> 
   <a class="card">
-  <div class="front" style="background-image: url(img/santasleigh2.gif)"> </div>
-  <div class="back" style="background-image: url(img/santaSleighBack.png)">
+  <div class="front" style="background-image: url(img/happyhols.gif)"> </div>
+  <div class="back" style="background-image: url(img/happyhols.png)">
     <div class="message">
-      <p>Dear Mom and Mike,<br><br>Thank you for all that you do, all year long. I hope you're cozy and warm, enjoying a fire and maybe a little sip of an adult beverage. Wish I could be there with you all. Maybe next year.<br><br>Love,<br>Kari</p>
+      <p>Dear Mom and Mike,<br><br>Thank you for all that you do, all year long. I hope you're cozy and warm, enjoying a fire and maybe a little sip of an adult beverage. Wish I could be there with you all. Maybe next year.<br>Love,<br>Kari</p>
     </div>
   </div>
   </a> 
-    <!--who i'm sending this to-->
-    <!--mom & mike
-Dear Mom and Mike,
-
-Thank you for all that you do, all year long. I hope you're cozy and warm, enjoying a fire and maybe a little sip of an adult beverage. Wish I could be there with you all. Maybe next year.
-
-Love,
-Kari
-    shannon
-    nicole and diane-->
     </div>
 </body>
 </html>

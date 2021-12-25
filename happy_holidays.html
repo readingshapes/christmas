@@ -91,8 +91,8 @@ body {
 .card {
 	color: inherit;
 	cursor: pointer;
-	width: calc(60% - 6rem);
-	height: 74vh;
+	width: calc(50% - 4rem);
+	height: 128vh;
 	perspective: 950px;
 	margin: 2rem;
 	position: relative;
@@ -152,7 +152,169 @@ body {
 .card:nth-child(even):hover .back {
 	transform: rotateY(0deg);
 }
+    
 
+@media screen and (min-width:1360px) {
+.card {
+	width: 20vw;
+}
+/*.front, .back {
+	width: 100%;
+}*/
+}    
+@media screen and (min-width:1300px) {
+.card {
+	width: 30vw;
+}
+.front, .back {
+	width: 160%;
+}
+}
+    
+@media screen and (min-width:1200px) {
+.card {
+	width: 45vw;
+}
+.front, .back {
+	width: 60%;
+}
+}
+@media screen and (min-width:1000px) {
+.card {
+	height: 30vw;
+}
+.front, .back {
+	height: 100%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}
+      
+@media screen and (max-width:999px) {
+.card {
+	width: 35vw;
+    height: 85vh;
+}
+.front, .back {
+	width: 160%;
+}
+}
+
+@media screen and (max-width:800px) {
+.card {
+	height: 50vw;
+}
+.front, .back {
+	height: 115%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}
+
+@media screen and (max-width:600px) {
+.card {
+	height: 50vw;
+}
+.front, .back {
+	height: 110%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}
+    
+@media screen and (max-width:500px) {
+.card {
+	height: 50vw;
+}
+.front, .back {
+	height: 100%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}
+    
+@media screen and (max-width: 414px) {
+.card {
+	height: 40vw;
+}
+.front, .back {
+	height: 100%;
+}
+.message {
+	margin-left: .7rem;
+    margin-right: .6rem;
+	font-weight: 30;
+	font-size: .65rem;
+	text-align: left;
+	letter-spacing: 0.09ch;
+	line-height: 1rem;
+	padding-bottom: .9rem;
+	margin-bottom: .5rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #dd2616;
+	font-family: 'Arima Madurai', cursive;
+}
+}
+
+/*
 @media screen and (min-width:1279px) {
 .card {
 	width: 70vw;
@@ -221,7 +383,7 @@ body {
 	color: #dd2616;
 	font-family: 'Arima Madurai', cursive;
 }
-}
+}*/
 </style>
 </head>
 <body>
