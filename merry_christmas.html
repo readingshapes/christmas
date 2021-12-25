@@ -114,8 +114,9 @@ body {
 	margin: 2 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: preserve-3d;
 	transform-style: preserve-3d;
+    -webkit-transition: ease-in-out 800ms;
 	transition: ease-in-out 800ms;
 }
 .front {
@@ -132,9 +133,11 @@ body {
 	z-index: -1;
 }
 .card:hover .front {
+    -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 .card:nth-child(even):hover .front {
+    -webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 }
 .back {
@@ -142,15 +145,19 @@ body {
 	padding: 1rem;
 	color: #fff;
 	overflow: visible;
+    -webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 }
 .card:hover .back {
+    -webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
 .card:nth-child(even) .back {
+    -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 .card:nth-child(even):hover .back {
+    -webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
 
