@@ -1,0 +1,98 @@
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+  .flip-card {
+      background-color: transparent;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back, .card-img-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: rgb(6, 6, 6);
+      transform: rotateY(180deg);
+    }
+    .message {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      font-weight: 100;
+      font-size: 1.118rem;
+      text-align: left;
+      letter-spacing: 0.1ch;
+      line-height: 1.45rem;
+      padding-bottom: 1.6rem;
+      margin-bottom: 1.15rem;
+      margin-top: 2.0rem;
+      position: relative;
+      overflow-wrap: break-word;
+      color: #3a0536;
+      font-family: 'Arima Madurai', cursive;
+    }
+  </style> 
+</head>
+<body>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            sizes="70vmin"
+            srcset="
+            img/mc22_1/mc22_1f_s.jpg 565w,
+            img/mc22_1/mc22_1f_m.jpg 750w,
+            img/mc22_1/mc22_1f_l.jpg 900w,
+            img/mc22_1/mc22_1f_xl.jpg 1000w,
+            img/mc22_1/mc22_1f_xxl.jpg 1200w"
+            src="img/mc22_1/mc22_1f_xs.jpg"
+            alt="merry xmas">
+        </div>
+        <div class="flip-card-back">
+          <img
+            sizes="70vmin"
+            srcset="
+            img/mc22_1/mc22_1b_s.jpg 565w,
+            img/mc22_1/mc22_1b_m.jpg 750w,
+            img/mc22_1/mc22_1b_l.jpg 900w,
+            img/mc22_1/mc22_1b_xl.jpg 1000w,
+            img/mc22_1/mc22_1b_xxl.jpg 1200w"
+            src="img/mc22_1/mc22_1b_xs.jpg"
+            alt="merry xmas">
+            <div class="card-img-overlay">
+              <p class="message">Some example text.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+
+ <!-- Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

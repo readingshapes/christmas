@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap');
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 300;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+}
+h2 {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+}
+body {
+	margin: 2rem;
+	padding: 1px;
+	height: 100vh;
+	background-color: #e3d096;
+	background-attachment: local;
+}
+.message {
+	margin-left: 3rem;
+    margin-right: 3rem;
+	font-weight: 100;
+	font-size: 1.118rem;
+	text-align: left;
+	letter-spacing: 0.1ch;
+	line-height: 1.45rem;
+	padding-bottom: 1.6rem;
+	margin-bottom: 1.15rem;
+	margin-top: 2.0rem;
+	position: relative;
+	overflow-wrap: break-word;
+	color: #3a0536;
+	font-family: 'Arima Madurai', cursive;
+}
+.content {
+	display: flex;
+	flex: 0 0 auto;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	color: #333;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 300;
+}
+/* .heading {
+	width: 100%;
+	margin-left: 1rem;
+	font-weight: 800;
+	font-size: 1.918rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1ch;
+	line-height: 1.85rem;
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.15rem;
+	margin-top: 1.5rem;
+	position: relative;
+	font-family: 'Arima Madurai', cursive;
+} */
+.description {
+	width: 100%;
+	margin-top: 0;
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+.card {
+	color: inherit;
+	cursor: pointer;
+	min-width: 55vw;
+	min-height: 70vh;
+	margin: 2rem;
+	position: relative;
+    background-color: #e3d096;
+}
+.front, .back {
+	display: flex;
+	flex: 0 0 auto;
+	border-radius: 3px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #e3d096;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 1.0rem;
+	margin: 2 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    -webkit-transform: preserve-3d;
+	transform-style: preserve-3d;
+    -webkit-transition: ease-in-out 800ms;
+	transition: ease-in-out 800ms;
+}
+.front {
+	background-size: cover;
+	padding: 1rem;
+	color: #e3d096;
+	overflow: visible;
+	background-image: url("img/mc22_1/mc22_1f.jpg");
+}
+.front:before {
+	position: absolute;
+	display: flex;
+	flex: 0 0 auto;
+	background: none;
+	z-index: -1;
+}
+.card:hover .front {
+    -webkit-transform: -webkit-translateY(180deg);
+	transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+    -webkit-transform: -webkit-translateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.back {
+	background-size: cover;
+	padding: 1rem;
+	color: #e3d096;
+	overflow: visible;
+    -webkit-transform: -webkit-translateY(-180deg);
+	transform: rotateY(-180deg);
+	background-image: url("img/mc22_1/mc22_1b.jpg");
+}
+.card:hover .back {
+    -webkit-transform: -webkit-translateY(0deg);
+	transform: rotateY(0deg);
+}
+.card:nth-child(even) .back {
+    -webkit-transform: -webkit-translateY(180deg);
+	transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .back {
+    -webkit-transform: -webkit-translateY(0deg);
+	transform: rotateY(0deg);
+}
+
+/* media queries----------------------------------------------------------- */ 
+
+@media screen and (min-width:1400px) {
+	.card {
+		min-height: 80vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xxl.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xxl.jpg");
+	}
+	}  
+
+@media screen and (min-width:1200px) {
+	.card {
+		min-height: 80vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xl.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xl.jpg");
+	}
+	} 
+
+@media screen and (min-width:992px) {
+	.card {
+		min-height: 80vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_l.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_l.jpg");
+	}
+	}  
+
+@media screen and (min-width:768px) {
+	.card {
+		min-width: 70vw;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_m.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_m.jpg");
+	}
+	}  
+
+@media screen and (min-width:576px) {
+	.card {
+		min-width: 75vw;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_s.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_s.jpg");
+	}
+	}  
+
+@media screen and (max-width:575.98px) {
+	.card {
+		min-width: 90vw;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xs.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xs.jpg");
+	}
+	}  
+	
