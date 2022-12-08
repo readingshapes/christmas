@@ -189,11 +189,18 @@
 	}
 }  
 @media screen and (max-width:500px) {
+  .body {
+    justify-content: left;
+    align-items: left;
+  }
   .card {
-    width: calc(80% - 2rem);
+		width: 50vw;
+		height: 30vh;
+    flex: 0 0 auto;
+	  margin: 0 auto;
   }
   .front, .back {
-    height: 50%;
+    height: 60%;
   }
   .front {
 		background-image: url("img/mc22_1/mc22_1f_xs.jpg");
