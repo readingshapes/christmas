@@ -26,7 +26,6 @@
     position: relative;
     width: 60vw;
     height: 80vh;
-    transition: transform 0.8s;
   }
   .card {
     width: 100%;
@@ -84,22 +83,114 @@
   .card:hover .card-front {
 	transform: rotateY(180deg);
 }
-  .message {
-      margin-left: 3rem;
-      margin-right: 3rem;
-      font-weight: 100;
-      font-size: 1.118rem;
-      text-align: left;
-      letter-spacing: 0.1ch;
-      line-height: 1.45rem;
-      padding-bottom: 1.6rem;
-      margin-bottom: 1.15rem;
-      margin-top: 2.0rem;
-      position: relative;
-      overflow-wrap: break-word;
-      color: #3a0536;
-      font-family: sans-serif;
-    }
+.message {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: 100;
+    font-size: 1.118rem;
+    text-align: left;
+    letter-spacing: 0.1ch;
+    line-height: 1.45rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.15rem;
+    margin-top: 2.0rem;
+    position: relative;
+    overflow-wrap: break-word;
+    color: #3a0536;
+    font-family: sans-serif;
+  }
+
+  /* media queries----------------------------------------------------------- */ 
+
+@media screen and (min-width:1400px) {
+	/* .card {
+		min-width: 30vw;
+		min-height: 40vh;
+	} */
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xxl.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xxl.jpg");
+	}
+}  
+
+@media screen and (min-width:1200px) {
+	/* .card {
+		min-width: 30vw;
+		min-height: 40vh;
+	} */
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xl.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xl.jpg");
+	}
+} 
+
+@media screen and (min-width:992px) {
+	.card {
+		min-width: 30vw;
+		min-height: 40vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_l.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_l.jpg");
+	}
+}  
+
+@media screen and (min-width:768px) {
+	.card {
+		min-width: 60vw;
+		min-height: 30vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_m.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_m.jpg");
+	}
+}  
+
+@media screen and (min-width:576px) {
+	.card {
+		min-width: 60vw;
+		min-height: 30vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_s.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_s.jpg");
+	}
+}  
+
+@media screen and (max-width:575.98px) {
+	.card {
+		min-width: 60vw;
+		min-height: 30vh;
+	}
+	.front {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1f_xs.jpg");
+	}
+	.back {
+		height: 100%;
+		background-image: url("img/mc22_1/mc22_1b_xs.jpg");
+	}
+}  
  </style> 
  
 </head>
