@@ -17,10 +17,10 @@
     background-color: #ffffff;
     background-attachment: local;
   }
-    background-image {
-    max-width: 100%;
-    height: auto;
-  }
+  /* background-image {
+  max-width: 100%;
+  height: auto;
+  } */
   .card-container {
     position: relative;
     width: 60vw;
@@ -169,9 +169,15 @@
 }  
 
 @media screen and (max-width:575.98px) {
+  .body {
+    justify-content: left;
+    align-items: left;
+  }
 	.card {
 		min-width: 50vw;
 		min-height: 30vh;
+    flex: 0 0 auto;
+	  margin: 0 auto;
 	}
 	.front {
 		height: 100%;
